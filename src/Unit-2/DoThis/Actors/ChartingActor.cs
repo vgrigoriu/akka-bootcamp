@@ -20,6 +20,18 @@ namespace ChartApp.Actors
             public Dictionary<string, Series> InitialSeries { get; private set; }
         }
 
+        public class AddSeries
+        {
+            private readonly Series series;
+
+            public AddSeries(Series series)
+            {
+                this.series = series;
+            }
+
+            public Series Series { get { return series; } }
+        }
+
         #endregion
 
         private readonly Chart _chart;
