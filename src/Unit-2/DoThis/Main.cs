@@ -32,11 +32,5 @@ namespace ChartApp
         }
 
         #endregion
-
-        private void AddSeriesButtonClick(object sender, EventArgs e)
-        {
-            var series = ChartDataHelper.RandomSeries("FakeSeries" + _seriesCounter.GetAndIncrement());
-            _chartActor.Tell(new ChartingActor.AddSeries(series));
-        }
     }
 }
