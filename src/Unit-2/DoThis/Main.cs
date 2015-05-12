@@ -32,5 +32,20 @@ namespace ChartApp
         }
 
         #endregion
+
+        private void CpuButtonClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MemoryButtonClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DiskButtonClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
