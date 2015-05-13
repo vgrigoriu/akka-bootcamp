@@ -32,6 +32,17 @@ namespace ChartApp.Actors
             public Series Series { get { return series; } }
         }
 
+        public class RemoveSeries
+        {
+            private readonly string seriesName;
+
+            public RemoveSeries(string seriesName)
+            {
+                this.seriesName = seriesName;
+            }
+
+            public string SeriesName { get { return seriesName; } }
+        }
         #endregion
 
         private readonly Chart _chart;
